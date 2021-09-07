@@ -13,10 +13,14 @@ function Preview(props) {
 
     let cardStyle = {
         display: 'flex',
+        flexDirection: 'column',
 
     }
     let cardFooter = {
-        display: 'flex'
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-evenly'
     }
     let previewImg = {
         height: '179px',

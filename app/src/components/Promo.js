@@ -12,7 +12,6 @@ function Promo(props) {
         display: 'flex',
         flexFlow: 'row no-wrap',
         alignItems: 'center',
-        width: '375px'
     }
 
     let cardHeader2 = {
@@ -32,8 +31,10 @@ function Promo(props) {
     }
     
     let previewCard = {
+        display: 'flex',
         background: '#F7FBFC',
         flexDirection: 'row',
+        overflow: 'hidden'
     }
     return (
         <div>
