@@ -7,9 +7,7 @@ function FeedPage(props) {
         <div>
             {props.promos.map( (promo) => {
                 return (
-                    <ul>
                         <Promo key={promo.id} promo={promo}/>
-                    </ul>
                 )
             })}
         </div>
