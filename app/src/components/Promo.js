@@ -2,10 +2,13 @@ import React, { useState, useEffect} from 'react'
 import Preview from './Preview';
 
 function Promo(props) {
+
+
     let iconStyle = {
         width: '65px',
         height: '65px',
-        margin: '18px 14px 18px 18px'
+        margin: '18px 14px 18px 18px',
+        borderRadius: '18px',
     }
 
     let cardHeader = {
@@ -34,12 +37,13 @@ function Promo(props) {
         display: 'flex',
         background: '#F7FBFC',
         flexDirection: 'row',
-        overflow: 'hidden'
+        overflowX: 'scroll'
     }
     return (
         <div>
             <div style={cardHeader}>
                 <img style={iconStyle} src={props.promo.campaign_icon_url} />
+                
                 <div style={cardHeader2}>
                     <span style={cardTitle}>{props.promo.campaign_name}</span>
                     <span style={payInstall}>{props.promo.pay_per_install} per install</span>
